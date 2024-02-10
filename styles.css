@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.HeroSection {
+    background: url(images/heroSectionBackground.png);
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+    height: 60px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navBarContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.navBarContainer .userIcon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.heroSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 100px;
+
+}
+
+.HeroSectionLogo {
+    height: 45px;
+
+}
+
+.discription {
+    color: white;
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+.HeroSectionInput {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.location,
+.searchBar {
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.location {
+    width: 35%;
+}
+
+.searchBar {
+    width: 75%;
+    border-left: 2px solid gainsboro;
+
+}
+
+
+.CardContainer {
+    margin: 3rem auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* This thing is the most important because this helps the contents present on the web page to adjust automatically according to the screen size*/
+}
+
+.offerCard {
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: aqua; */
+    border: 2px solid #e0e0e0;
+    transition: all 0.5s ease-out;
+}
+
+.offerCard img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.OfferContent {
+    padding: 10px;
+    /* font-weight: 400; */
+    /* No use of these two lines as these lines are overwritten again in next lines */
+    /* font-size: 15px; */
+}
+
+.OfferContent h2 {
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.OfferContent p {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.offerCard:hover {
+    transform: scale(1.08);
+
+}
+
+.CollectionContent {
+    margin: 0% 9%;
+}
+
+.CollectionContent .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.SecCardContainer {
+    margin: 0% 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    color: white;
+
+}
+
+.secondOfferCard {
+    transition: all 0.5s ease-in-out;
+}
+
+.secondOfferCard:hover {
+    transform: scale(0.98);
+}
+
+.SecCardContainer .secondOfferCard {
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 13px;
+
+}
+
+.info h3 {
+    font-weight: 400;
+}
+
+
+
+.card1 {
+    background-image: url(./images/collection1.jpg);
+
+}
+
+.card2 {
+    background-image: url(./images/collection2.jpg);
+}
+
+.card3 {
+    background-image: url(./images/collection3.jpg);
+}
+
+.card4 {
+    background-image: url(./images/collection4.jpg);
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 62%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.info {
+    position: absolute;
+
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+
+
+
+}
+
+.get_app {
+    background-color: rgb(255, 251, 247);
+    padding: 50px 0px;
+}
+
+.singleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+
+}
+
+.imgC {
+    height: 50vh;
+    width: 100%;
+
+
+}
+
+.right_Container h1 {
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.right_Container p {
+    font-size: small;
+    margin: 15px;
+}
+
+.radioButtonContainer {
+    font-size: large;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+
+
+}
+
+
+.inputContainer {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    /* margin-right: 0%; */
+
+}
+
+.inputCC {
+
+    outline: none;
+    flex: auto;
+    padding: 2% 0%;
+    padding-left: 2%;
+    padding-right: 30%;
+    border-radius: 5px;
+    border: solid 1.5px gray;
+    outline: none;
+
+
+
+
+}
+
+
+.ButtonGA {
+
+
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    background-color: rgb(239, 79, 95);
+    border: solid 1px rgb(239, 79, 95);
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.text {
+    margin: 3%;
+    font-weight: 400;
+    font-size: small;
+    color: gray;
+}
+
+
+.storesize {
+    height: 50px;
+    margin: 0% 2%
+}
+
+
+
+.footer {
+    margin-top: 2%;
+    width: 100%;
+}
+
+.footer_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer_section1 img {
+    width: 120px;
+}
+
+.section1__buttonContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.section1__buttonContainer button {
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation_container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.link__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.link__container h5 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+    /*    Letter spaci g is used for displaying the spaing between the letters of same word */
+}
+
+.footer__link {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer__link:hover {
+    color: black;
+}
+
+.social__links_container {
+    display: flex;
+    gap: 5px;
+
+}
+
+.social__links_container button {
+    border: none;
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__section_logos {
+    height: 9.5vh;
+    width: 100%;
+}
+
+
+.hori {
+    margin: 0% 2.5%;
+}
+
+.finalF {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: gray;
+    padding: 20px 40px 40px 40px;
+}
+
+
+@media only screen and (max-width:768px) {
+    .navBarContainer .userIcon {
+        display: flex;
+
+    }
+
+    .link {
+        display: none;
+    }
+
+    .HeroSection {
+        min-height: 80vh;
+    }
+
+    .heroSectionContainer {
+        height: calc(80vh - 60px);
+        height: auto;
+
+    }
+
+    .discription {
+        font-size: larger;
+        height: larger;
+
+        text-align: center;
+    }
+
+    .singleContainer {
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media only screen and (max-width:450px) {
+    .HeroSectionInput {
+        visibility: collapse;
+    }
+}
